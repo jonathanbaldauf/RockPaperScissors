@@ -300,19 +300,19 @@ void OpenThumb()
 }
 //////////////////////////////////////////////////
 //Theatre-style crawling lights.
-void theaterChase(uint32_t c, uint8_t wait) {
-  for (int j=0; j<5; j++) {  //do 5 cycles of chasing
-    for (int q=0; q < 3; q++) {
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, c);    //turn every third pixel on
-      }
-      strip.show();
-
-      delay(wait);
-
-      for (uint16_t i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, 0);        //turn every third pixel off
-      }
-    }
-  }
-}
+//void theaterChase(uint32_t c, uint8_t wait) {
+//  for (int j=0; j<5; j++) {  //do 5 cycles of chasing
+//    for (int q=0; q < 3; q++) {
+//      for (uint16_t i=0; i < strip.numPixels(); i=i+3) {
+//        strip.setPixelColor(i+q, c);    //turn every third pixel on
+//      }
+//      strip.show();
+//
+//      delay(wait);
+//
+//      for (uint16_t i=0; i < strip.numPixels(); i=i+3) {
+//        strip.setPixelColor(i+q, 0);        //turn every third pixel off
+//      }
+//    }
+//  }
+//}
